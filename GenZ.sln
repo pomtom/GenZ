@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenZ.WebApi", "GenZ.WebApi\GenZ.WebApi.csproj", "{C16E15D0-3E13-431C-AB27-7D4D7F2D0222}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenZ.WebApi", "GenZ.WebApi\GenZ.WebApi.csproj", "{C16E15D0-3E13-431C-AB27-7D4D7F2D0222}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenZ.Business", "GenZ.Business\GenZ.Business.csproj", "{3D83DF16-B956-43F3-BCF8-C68B02357C9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenZ.Business", "GenZ.Business\GenZ.Business.csproj", "{3D83DF16-B956-43F3-BCF8-C68B02357C9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenZ.Database", "GenZ.Database\GenZ.Database.csproj", "{226FB1CE-9100-473C-B69A-D8ACEB6A9E0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenZ.Database", "GenZ.Database\GenZ.Database.csproj", "{226FB1CE-9100-473C-B69A-D8ACEB6A9E0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenZ.Framework", "GenZ.Framework\GenZ.Framework.csproj", "{AC88CDC0-6A65-4455-82A7-016AD689961B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenZ.Framework", "GenZ.Framework\GenZ.Framework.csproj", "{AC88CDC0-6A65-4455-82A7-016AD689961B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenZ.UnitTest", "GenZ.UnitTest\GenZ.UnitTest.csproj", "{3F6F39B1-4F14-4BCA-A531-5D63C7AFD790}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AC88CDC0-6A65-4455-82A7-016AD689961B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC88CDC0-6A65-4455-82A7-016AD689961B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC88CDC0-6A65-4455-82A7-016AD689961B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F6F39B1-4F14-4BCA-A531-5D63C7AFD790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6F39B1-4F14-4BCA-A531-5D63C7AFD790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F6F39B1-4F14-4BCA-A531-5D63C7AFD790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6F39B1-4F14-4BCA-A531-5D63C7AFD790}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

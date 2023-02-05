@@ -29,7 +29,6 @@ namespace GenZ.Database
                 optionsBuilder.UseSqlServer(
                 "Server=UPSDJ;Database=GenZDB;Trusted_Connection=True;MultipleActiveResultSets=True;");
             }
-            //base.OnConfiguring(optionsBuilder);
         }
     }
 }
