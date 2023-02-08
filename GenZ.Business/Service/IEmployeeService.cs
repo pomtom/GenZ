@@ -6,7 +6,7 @@ namespace GenZ.Business.Service
     {
         IEnumerable<Employee> GetAllEmployee();
 
-        void InsertEmployeeUsingSP(Employee emp);
+        void InsertEmployeeUsingEE(Employee emp);
 
         Employee GetEmployeeById(int id);
 

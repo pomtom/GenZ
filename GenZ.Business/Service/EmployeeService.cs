@@ -25,7 +25,7 @@ namespace GenZ.Business.Service
             return employee;
         }
 
-        public void InsertEmployeeUsingSP(Employee employee)
+        public void InsertEmployeeUsingEE(Employee employee)
         {
             _employeeRepository.InsertEmployeeUsingEE(employee);
         }

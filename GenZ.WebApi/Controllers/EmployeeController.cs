@@ -15,55 +15,72 @@ namespace GenZ.WebApi.Controllers
         {
             _employeeservice = employeeservice;
         }
-        // GET: api/<EmployeeController>
+
         [HttpGet]
         public IEnumerable<Employee> Get()
         {
             try
             {
                 var response = _employeeservice.GetAllEmployee();
-                return (IEnumerable<Employee>)response;
-
+                return response.ToList();
             }
             catch (Exception ex)
             {
-                string msg = string.Empty;
-                if (ex.InnerException != null)
-                {
-                    msg = ex.InnerException.Message;
-                }
-                else
-                {
-                    msg = ex.Message;
-                }
+                throw;
             }
-
-            return null;
         }
 
-        // GET api/<EmployeeController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Employee Get(int id)
         {
-            return "value";
+            try
+            {
+                return _employeeservice.GetEmployeeById(id);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        // POST api/<EmployeeController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Employee employee)
         {
+            try
+            {
+                _employeeservice.InsertEmployeeUsingEE(employee);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        // PUT api/<EmployeeController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody] Employee employee)
         {
+            try
+            {
+                if (id != employee.Id)
+                {
+                    throw new ArgumentException("argument not matched");
+                }
+                _employeeservice.UpdateEmployee(employee);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        // DELETE api/<EmployeeController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            try
+            {
+                _employeeservice.DeleteEmployee(id);
+            }
+            catch (Exception) { throw; }
         }
     }
 }
